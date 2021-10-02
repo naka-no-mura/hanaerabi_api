@@ -13,4 +13,9 @@ class Flower extends Model
         'name',
         'image',
     ];
+
+    public function season()
+    {
+        return $this->belongsToMany('App\Season');
+    }
 }

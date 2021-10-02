@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
             SeasonSeeder::class,
             MeaningSeeder::class,
             FlowerSeeder::class,
+            FlowerSeasonSeeder::class,
+            FlowerMeaningSeeder::class,
         ]);
     }
 }

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Flower;
 
 class Season extends Model
 {
@@ -12,4 +13,9 @@ class Season extends Model
     protected $fillable = [
         'season',
     ];
+
+    public function flower()
+    {
+        return $this->belongsToMany('App\Flower');
+    }
 }

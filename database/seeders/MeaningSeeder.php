@@ -211,6 +211,18 @@ class MeaningSeeder extends Seeder
                 'id' => 49,
                 'meaning' => '恋の苦しみ'
             ],
+            [
+                'id' => 50,
+                'meaning' => '愛'
+            ],
+            [
+                'id' => 51,
+                'meaning' => '美'
+            ],
+            [
+                'id' => 52,
+                'meaning' => '無垢な愛'
+            ],
         ]);
     }
 }
