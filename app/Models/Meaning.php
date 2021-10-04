@@ -12,4 +12,9 @@ class Meaning extends Model
     protected $fillable = [
         'meaning',
     ];
+
+    public function flower()
+    {
+        return $this->belongsToMany('App\Models\Flower');
+    }
 }
