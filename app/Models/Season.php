@@ -18,9 +18,4 @@ class Season extends Model
     {
         return $this->belongsToMany('App\Models\Flower');
     }
-
-    public function meaning()
-    {
-        return $this->belongsToMany('App\Models\Meaning');
-    }
 }
