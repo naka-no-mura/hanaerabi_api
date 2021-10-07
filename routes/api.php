@@ -17,16 +17,8 @@ use App\Http\Controllers\Api\v1\FlowerController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::prefix('v1')->group(function() {
+Route::middleware('auth:sanctum')->prefix('v1')->group(function() {
     Route::get('/seasons', [SeasonController::class, 'index']);
     Route::get('/meanings/{season}', [MeaningController::class, 'meanings']);
     Route::get('/flowers/{season}/{meaning}', [FlowerController::class, 'flower']);
 });
-
-// Route::prefix('v1')->group(function() {
-//     Route::apiResource('/seasons', SeasonController::class);
-// });
